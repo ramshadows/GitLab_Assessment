@@ -275,7 +275,6 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-
 ```
 ```
 
@@ -288,6 +287,12 @@ git commit -m "Add new feature: description of changes"
 To verify that your staged files have successifuly been committed. Run the git status command again.
 ```
 git status
+```
+You should see something similar to this;
+```
+On branch main
+nothing to commit, working tree clean
+
 ```
 ### Step 4: Push Changes to Remote
 Once you've committed your changes locally, it's time to push them to the remote repository - the GitLab repo
