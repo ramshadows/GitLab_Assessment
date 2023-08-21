@@ -265,7 +265,7 @@ The, <git add .> command stages the changes or rather prepares the changes ready
 # Check the status of your changes
 git status
 ```
-# You should see something similar to this;
+You should see something similar to this;
 ```
 On branch main
 Changes not staged for commit:
