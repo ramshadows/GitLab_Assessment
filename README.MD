@@ -258,8 +258,10 @@ The above command creates a new branch named "feature-branch" and switches to it
 
 Now it's time to make your changes. Open your favorite code editor, make the necessary modifications to your code or document, and save the files. End back to your terminal and run the below commands in their order.
 
-Note: The <git status> command checks which files have been modified and need to be staged.
-The, <git add .> command stages the changes or rather prepares the changes ready to be committed and the <git commit> command saves the changes.
+Note: 
+The, <git status> command checks which files have been modified and need to be staged.
+The, <git add .> command stages the changes or rather prepares the changes ready to be committed.
+The, <git commit> command saves the changes.
 
 ```
 # Check the status of your changes
@@ -276,10 +278,13 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 ```
+Add the modified files to the staging area
 ```
-
 # Add the modified files to the staging area
 git add .
+```
+Commit the changes
+```
 
 # Commit the changes with a descriptive message
 git commit -m "Add new feature: description of changes"
