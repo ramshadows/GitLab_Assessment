@@ -57,6 +57,10 @@ You can run the script as below
 ```
 
 #### Part 2
+A Bash script that takes the list of a all usernames in a Linux system including their home directories
+, converts it into an MD5 hash, stores it in /var/log/current_users if no changes. Otherwise, if there
+are changes to the file, logs the changes together with the date the changes occurred and stores
+the new file in /var/log/user_changes.
 ```
 #!/bin/bash
 
@@ -166,6 +170,8 @@ this commit graph?
 ![git commit graph](git_commit_graph.jpeg)
 
 ### Answer
+The below steps shows the possible sequence of steps that could have resulted in th git commit graph above.
+
 Disclaimer! The below steps assumes there are no merge conflicts. If you get into merge conflicts, you have to resolve them manually.
 ```
 # Step 1: Start with the main branch if already not
@@ -191,7 +197,6 @@ git commit -m "main branch third commit"
 # Step 11: Now, while still on main branch, merge the feature-branch to main branch
 git merge feature-branch
 ```
-The above steps shows the possible sequence of steps that could above resulted in th git commit graph shown.
 
 ## Question 4
 
@@ -259,6 +264,20 @@ The, <git add .> command stages the changes or rather prepares the changes ready
 ```
 # Check the status of your changes
 git status
+```
+# You should see something similar to this;
+```
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.MD
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+```
+```
 
 # Add the modified files to the staging area
 git add .
