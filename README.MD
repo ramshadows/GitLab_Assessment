@@ -334,7 +334,8 @@ Congratulations! You've successfully learned how to use Git to implement a new f
 
 ## Question 5
 
-
+What is a technical book/blog you read recently that you enjoyed? Please include a brief review of
+what you especially liked or didn’t like about it.
 ### Answer
 I recently read a blog post on [Proper HTTP Shutdown in Go](https://dev.to/mokiat/proper-http-shutdown-in-go-3fji).  Here's a summary of what I liked and what I didn't like about it.
 #### What I Liked:
