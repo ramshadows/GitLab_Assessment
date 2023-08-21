@@ -320,3 +320,10 @@ I recently read a blog post on [Proper HTTP Shutdown in Go](https://dev.to/mokia
 Overall, the blog post effectively addresses the topic of proper HTTP shutdown in Go, offering clear explanations, real-world scenarios, and detailed solutions. By highlighting common mistakes and presenting improved implementations, the author provides valuable insights for developers like me striving to implement graceful shutdown in their applications. 
 Therefore, honestly speaking, I did not find anything that I didn't like. Kudos to the author for creating a top-notch tutorial that not only educates but also engages readers from start to finish.
 
+## Reference
+- <https://docs.gitlab.com/ee/tutorials/make_first_git_commit/index.html>
+- <https://www.gnu.org/software/bash/manual/bash.html>
+- <https://stackify.com/web-application-problems/>
+- <https://stackify.com/how-to-diagnose-application-slowness/>
+
+
