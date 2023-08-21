@@ -168,21 +168,27 @@ this commit graph?
 ### Answer
 Disclaimer! The below steps assumes there are no merge conflicts. If you get into merge conflicts, you have to resolve them manually.
 ```
-# Step 1: Start with the main branch
-git switch main
-# Step 2: Do some work, make the first commit
-git add -a -m "main branch first commit"
-# Step 3: Do some work, make the second commit
-git add -a -m "main branch second commit"
-# Step 4: While on the main branch, create a new branch named "Feature-branch and switch to it"
+# Step 1: Start with the main branch if already not
+git checkout main
+# Step 2: Do some work, example on a file, then stage
+git add .
+# Step 3: Commit the changes
+git commit -m "main branch first commit"
+# Step 4: Do some work, make the second commit
+git commit -m "main branch second commit"
+# Step 5: While on the main branch, create a new branch named "Feature-branch and switch to it"
 git checkout -b feature-branch
-# Step 5: Do some work on the feature-branch, then commit
-git add -a -m "feature-branch first commit"
-# Step 6: Switch to main branch
-git switch main
-# Step 7: Do some work on the main branch, then commit
-git add -a -m "main branch third commit"
-# Step 8: Now, while still on main branch, merge the feature-branch to main branch
+# Step 6: Do some work on the feature-branch, then stage
+git add .
+# Step 7: Commit the changes
+git commit -m "feature-branch first commit"
+# Step 8: Switch to main branch
+git checkout main
+# Step 9: Do some work on the main branch, then stage
+git add .
+# Step 10: Commit the changes
+git commit -m "main branch third commit"
+# Step 11: Now, while still on main branch, merge the feature-branch to main branch
 git merge feature-branch
 ```
 The above steps shows the possible sequence of steps that could above resulted in th git commit graph shown.
